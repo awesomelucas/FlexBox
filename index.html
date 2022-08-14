@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter&family=Raleway&family=Roboto&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="./src/assets/img/favicon.jpeg" type="image/x-icon" />
+  <link rel="stylesheet" href="./src/style/reset.css" />
+  <link rel="stylesheet" href="./src/style/style.css" />
+
+  <title>Aula FlexBox</title>
+</head>
+
+<body>
+  <header>
+    <h1>Aula FlexBox</h1>
+  </header>
+  <main class="content">
+
+    <section class="mainContent">
+      <h2>Display Flex</h2>
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>display</code>
+        <select name="Flex" id="flex">
+          <option value="block">Sem Display Flex</option>
+          <option value="flex">flex</option>
+        </select>
+      </section>
+      <section class="container flexContainer">
+        <div class="flexItens">
+          <p>Item Um</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Dois</p>
+        </div>
+        <div class="flexItens">
+          <p>Item tres</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Quatro</p>
+        </div>
+      </section>
+
+      <h2>Flex-direction</h2>
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>flex-direction</code>
+        <select name="Flex" id="flexDirection">
+          <option value="row">row</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column">column</option>
+          <option value="column-reverse">column-reverse</option>
+        </select>
+      </section>
+      <section class="container flexDirectionContainer">
+        <div class="flexItens">
+          <p>Item Um</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Dois</p>
+        </div>
+        <div class="flexItens">
+          <p>Item tres</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Quatro</p>
+        </div>
+      </section>
+
+      <h2>Flex-wrap</h2>
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>flex-wrap</code>
+        <select name="Flex" id="flexWrap">
+          <option value="nowrap">nowrap</option>
+          <option value="wrap">wrap</option>
+          <option value="wrap-reverse">wrap-reverse</option>
+        </select>
+      </section>
+      <section class="container flexWrapContainer">
+        <div class="flexItens">
+          <p>Item Um</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Dois</p>
+        </div>
+        <div class="flexItens">
+          <p>Item tres</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Quatro</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Quatro com mais texto</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Cinco</p>
+        </div>
+      </section>
+
+      <h2>Flex-flow</h2>
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>flex-flow</code>
+        <select name="Flex" id="flexFlow">
+          <option value="row nowrap">row nowrap</option>
+          <option value="column wrap">column wrap</option>
+        </select>
+      </section>
+      <section class="container flexFlowContainer">
+        <div class="flexItens">
+          <p>Item Um</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Dois</p>
+        </div>
+        <div class="flexItens">
+          <p>Item tres</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Quatro</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Quatro com mais texto</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Cinco</p>
+        </div>
+      </section>
+
+      <h2>Justify-content</h2>
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>flex-direction</code>
+        <select name="Flex" class="flexDirection">
+          <option value="row">row</option>
+          <option value="column">column</option>
+        </select>
+      </section>
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>justify-content</code>
+        <select name="Flex" id="justifyContent">
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="center">center</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+          <option value="space-evenly">space-evenly</option>
+        </select>
+      </section>
+
+      <section class="container justifyContentContainer">
+        <div class="flexItens">
+          <p>Item Um</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Dois</p>
+        </div>
+        <div class="flexItens">
+          <p>Item tres</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Quatro</p>
+        </div>
+      </section>
+
+      <h2>Align-items</h2>
+
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>flex-direction</code>
+        <select name="Flex" class="flexDirectionAlign">
+          <option value="row">row</option>
+          <option value="column">column</option>
+        </select>
+      </section>
+
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>align-items</code>
+        <select name="Flex" id="alignItems">
+          <option value="stretch">stretch</option>
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="center">center</option>
+        </select>
+      </section>
+
+      <section class="container alignIntemsContainer">
+        <div class="flexItens">
+          <p>Item Um</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Dois</p>
+        </div>
+        <div class="flexItens">
+          <p>Item tres</p>
+        </div>
+        <div class="flexItens">
+          <p>Item Quatro</p>
+        </div>
+      </section>
+
+
+      <h2>Align-content</h2>
+
+
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>flex-direction</code>
+        <select name="Flex" class="flexDirectionAlignContent">
+          <option value="row">row</option>
+          <option value="column">column</option>
+        </select>
+      </section>
+
+      <section class="changeProp">
+        <label>Mudar</label>
+        <code>align-content</code>
+        <select name="Flex" id="alignContent">
+          <option value="flex-start">flex-start</option>
+          <option value="flex-end">flex-end</option>
+          <option value="center">center</option>
+          <option value="space-between">space-between</option>
+          <option value="space-around">space-around</option>
+          <option value="stretch">stretch</option>
+        </select>
+      </section>
+
+      <section class="container alignContentContainer">
+        <div class="flexItensAlignContent">
+          <p>Item Um</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item Dois</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item tres</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item Quatro</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item Cinco</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item Seis</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item Seis com mais texto</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item Sete</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item Sete com mais texto</p>
+        </div>
+        <div class="flexItensAlignContent">
+          <p>Item Oito</p>
+        </div>
+      </section>
+
+      <div class="modal">
+        <div class="agradecimentos">
+          <p>
+            Pessoal esse projeto tem como objetivo ajudar vocês alunos a entender um pouco melhor o FlexBox. E ter uma visão de como os Flex Itens se comporta dentro do container pai (Container Flex).
+          </p>
+          <p>
+            Caso tenha algum feedback ou idéia que possa contribuir para o projeto por favor acessar o formulário clicando no botão de reportar.
+          </p>
+          <p>
+            Em breve terá algumas atualizações então fiquem ligados!
+          </p>
+          <button class="btn">
+            Entendi!
+          </button>
+        </div>
+        <span class="infoReport">
+          Encontrou algum erro/bug ? <em class="reportar">Reportar</em>
+        </span>
+        <div class="report">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJ1jC10fmTTZEsMSCV18HJeKmvEOODztj6G-AMkLJdYtbPDA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+          <button class="btn close">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </section>
+
+    </aside>
+
+  </main>
+
+
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>

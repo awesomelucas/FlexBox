@@ -1,0 +1,152 @@
+:root{
+    --fundo: #F5FFFA;
+    --cor-texto: #4B0082;
+    --cor-container: #F8F8FF;
+    --cor-borda:#4B0082;
+    --box-1: #c3c3fa;
+    --box-2: #a7dde4;
+    --box-borda-1: #4682B4;
+    --paragrafos: #000;
+}
+header{
+    text-align: center;
+    font-size: 2.25rem;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+body{
+    background-color: var(--fundo);
+    color: var(--cor-texto);
+}
+h2{
+    font-size: 1.25rem;
+    margin: 20px;
+}
+code{
+    padding: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid var(--cor-borda);
+}
+
+select{
+    font-size: .9rem;
+    padding: 5px;
+}
+
+.content{
+    display: flex;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 35px auto;
+}
+.changeProp{
+    margin: 20px 0;
+}
+
+.container{
+    width: 80%;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-container);
+}
+
+.flexItens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    background-color: var(--box-1);
+    border: 1px solid var(--box-borda-1);
+    margin: 10px;
+}
+.flexItens:nth-child(odd){
+   background-color: var(--box-2);
+}
+
+.flexDirectionContainer{
+    display: flex;
+}
+
+.flexWrapContainer{
+    display: flex;
+}
+.flexFlowContainer{
+    display: flex;
+    
+}
+.justifyContentContainer{
+    display: flex;
+    height: 300px;
+}
+
+.alignIntemsContainer{
+    display: flex;
+    height: 300px;
+}
+
+.alignContentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+.flexItensAlignContent{
+    min-height: 20px;
+    background-color: var(--box-1);
+    border: 1px solid var(--box-borda-1);
+    margin: 5px;
+}
+
+.flexItensAlignContent:nth-child(even){
+    background-color: var(--box-2);
+}
+
+.modal{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--cor-texto);
+    background-color: var(--fundo);
+    border: 1px solid var(--cor-borda);
+    position: relative;
+    z-index: 1;
+    top: 30vh;
+    position: fixed;
+    padding: 20px;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    background-color: var(--box-2);
+    border:1px solid var(--box-borda-1);
+    margin-top: 20px;
+    color: var(--cor-texto);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal p{
+    margin: 10px;
+}
+
+.report{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.report iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.reportar{
+    color: var(--box-borda-1);
+    cursor: pointer;
+}
