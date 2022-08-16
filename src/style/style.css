@@ -33,6 +33,10 @@ select{
     padding: 5px;
 }
 
+.msg{
+    display: none;
+}
+
 .content{
     display: flex;
 }
@@ -149,4 +153,15 @@ select{
 .reportar{
     color: var(--box-borda-1);
     cursor: pointer;
+}
+
+
+@media (max-width: 1170px){
+    .content{
+        display: none;
+    }
+
+    .msg{
+        display: block;
+    }
 }
