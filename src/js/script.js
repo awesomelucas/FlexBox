@@ -15,6 +15,11 @@ const flexDirectionAlignProp = document.querySelector(".flexDirectionAlign")
 const alignContent = document.querySelector(".alignContentContainer")
 const alignContentProp = document.querySelector("#alignContent")
 const flexDirectionAlignContentProp = document.querySelector(".flexDirectionAlignContent")
+const agradecimento = document.querySelector(".agradecimentos")
+const reportar = document.querySelector(".reportar")
+const reportarArea = document.querySelector(".report")
+const infoReport = document.querySelector(".infoReport")
+const fecharForm = document.querySelector(".close")
 
 const modal = document.querySelector(".modal")
 const closeModal = document.querySelector(".btn")
@@ -72,12 +77,6 @@ flexDirectionAlignContentProp.addEventListener("change", (evt) => {
 closeModal.addEventListener("click", event =>{
     modal.style.display = "none"
 })
-
-const agradecimento = document.querySelector(".agradecimentos")
-const reportar = document.querySelector(".reportar")
-const reportarArea = document.querySelector(".report")
-const infoReport = document.querySelector(".infoReport")
-const fecharForm = document.querySelector(".close")
 
 reportar.addEventListener("click", event =>{
     agradecimento.style.display = "none"
